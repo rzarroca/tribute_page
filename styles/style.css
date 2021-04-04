@@ -1,0 +1,86 @@
+body {
+    background-color:goldenrod;
+    font-family: 'Roboto', sans-serif;
+}
+
+body>* {
+    background-color:rgb(238, 238, 238);
+    margin: 10px 1vw;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 10px;;
+
+}
+
+div, article, #quotes figure {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+h1, h2 {
+    font-family: 'Ultra', sans-serif;
+    color: goldenrod;
+    -webkit-text-stroke: 1px darkred;
+    text-shadow: 0px 4px darkred;
+    letter-spacing: 0.1rem;
+    
+
+}
+
+article figure {
+    float: left;
+    margin: 0px 20px;
+}
+
+/* Hack para que la imagen no se salga del contenedor padre */
+/* ver de no utilizar clases */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+h3, summary {
+    font-family: 'Ultra', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article p {
+    text-align: justify;
+}
+
+h1+p {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+blockquote {
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+
+a {
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 700px;
+}
+
+article img {
+    width: 180px;
+}
